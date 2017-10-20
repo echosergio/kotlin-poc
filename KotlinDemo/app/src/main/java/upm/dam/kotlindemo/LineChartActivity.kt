@@ -14,7 +14,7 @@ class LineChartActivity : AppCompatActivity() {
 
         val chart = findViewById(R.id.lineChart) as LineChart
 
-        var company1 = Company("Company 1")
+        val company1 = Company("Company 1")
         company1.quarterEarnings.addAll(
                 listOf(
                         QuarterlyEarnings(1, 140000),
@@ -22,7 +22,7 @@ class LineChartActivity : AppCompatActivity() {
                         QuarterlyEarnings(3, 170000),
                         QuarterlyEarnings(4, 180000)))
 
-        var company2 = Company("Company 2", Color.BLUE)
+        val company2 = Company("Company 2", Color.BLUE)
         company2.quarterEarnings.addAll(
                 listOf(
                         QuarterlyEarnings(1, 160000),
