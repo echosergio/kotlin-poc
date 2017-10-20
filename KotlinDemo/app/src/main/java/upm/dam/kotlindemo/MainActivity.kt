@@ -23,6 +23,4 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this@MainActivity, LineChartActivity::class.java)
         startActivity(intent)
     }
-
-
 }

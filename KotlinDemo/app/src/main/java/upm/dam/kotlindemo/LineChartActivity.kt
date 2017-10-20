@@ -32,10 +32,7 @@ class LineChartActivity : AppCompatActivity() {
 
         val companies = listOf(company1, company2)
 
-        val chartData = ChartData()
-        companies.forEach { chartData.addCompany(it) }
-
-        val dataSets = chartData.getChartData().toList()
+        val dataSets = companies.toDataSet()
         val data = LineData(dataSets)
 
         chart.setData(data)
